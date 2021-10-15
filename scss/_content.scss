@@ -1,0 +1,23 @@
+main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 65vh;
+
+  .content {
+    padding: 30px 70px;
+    background-color: $another-color;
+    p {
+      color: $secondary-color;
+      &::selection {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+    ul {
+      margin: 30px 25px;
+      li {
+        list-style-type: circle;
+      }
+    }
+  }
+}

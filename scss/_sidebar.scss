@@ -1,0 +1,14 @@
+aside {
+  padding: 30px;
+  background-color: $secondary-color;
+  p {
+    transition: 0.5s;
+    padding: 10px;
+    color: $primary-color;
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color;
+      background-color: $another-color;
+    }
+  }
+}

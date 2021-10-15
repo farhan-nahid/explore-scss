@@ -1,93 +1,21 @@
-$primary-color: crimson;
-$secondary-color: blue;
-$another-color: cadetblue;
-$main-font: Arial, Helvetica, sans-serif;
+@import "./variables";
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: $main-font;
 }
 
-header {
-  height: 30vh;
-  h1 {
-    height: 22vh;
-    color: $primary-color;
-    background-color: $secondary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  nav {
-    height: 8vh;
-    background-color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    ul {
-      li {
-        list-style-type: none;
-        display: inline-block;
-        color: $secondary-color;
-        margin-left: 20px;
-        a {
-          text-decoration: none;
-          background-color: $secondary-color;
-          padding: 5px;
-          color: $primary-color;
-          &:hover {
-            color: white;
-            background-color: $secondary-color;
-          }
-        }
-      }
-    }
-  }
-}
-
-main {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  height: 65vh;
-
-  .content {
-    padding: 30px 70px;
-    background-color: $another-color;
-    p {
-      color: $primary-color;
-    }
-    ul {
-      margin: 30px 25px;
-      li {
-        list-style-type: circle;
-      }
-    }
-  }
-}
-
-aside {
-  padding: 30px;
-  background-color: $secondary-color;
-  p {
-    transition: 0.5s;
-    padding: 10px;
-    color: $primary-color;
-    &:hover {
-      color: $primary-color;
-      background-color: $secondary-color;
-    }
-  }
-}
-
-footer {
-  height: 5vh;
-  background-color: $primary-color;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  p {
-    padding-right: 100px;
-    color: $secondary-color;
-  }
-}
+@import "./header";
+@import "./content";
+@import "./sidebar";
+@import "./footer";

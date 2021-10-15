@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+header {
+  height: 30vh; }
+  header h1 {
+    height: 22vh;
+    color: crimson;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  header nav {
+    height: 8vh;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    header nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      color: blue;
+      margin-left: 20px; }
+      header nav ul li a {
+        text-decoration: none;
+        background-color: blue;
+        padding: 5px;
+        color: crimson; }
+        header nav ul li a:hover {
+          color: white;
+          background-color: blue; }
+
+main {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 65vh; }
+  main .content {
+    padding: 30px 70px;
+    background-color: cadetblue; }
+    main .content p {
+      color: crimson; }
+    main .content ul {
+      margin: 30px 25px; }
+      main .content ul li {
+        list-style-type: circle; }
+
+aside {
+  padding: 30px;
+  background-color: blue; }
+  aside p {
+    transition: 0.5s;
+    padding: 10px;
+    color: crimson; }
+    aside p:hover {
+      color: crimson;
+      background-color: blue; }
+
+footer {
+  height: 5vh;
+  background-color: crimson;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  footer p {
+    padding-right: 100px;
+    color: blue; }
+
+/*# sourceMappingURL=style.css.map */

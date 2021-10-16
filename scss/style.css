@@ -12,14 +12,14 @@ body {
   font-family: Arial, Helvetica, sans-serif; }
 
 .first, .second, .third {
-  color: red;
+  color: crimson;
   line-height: 30px;
   font-size: 30px;
   width: 30px;
   font-family: Arial, Helvetica, sans-serif; }
 
 .second {
-  color: green; }
+  color: cadetblue; }
 
 .third {
   color: blue; }
@@ -31,7 +31,7 @@ body {
   font-family: Arial, Helvetica, sans-serif; }
 
 .fourth {
-  color: green; }
+  color: cadetblue; }
 
 .fifth {
   color: blue; }
@@ -48,8 +48,8 @@ body {
   padding: true;
   padding: false;
   padding: true;
-  padding: 0.1666670084;
-  padding: 90;
+  padding: 0.0466568498;
+  padding: 91;
   padding: "px";
   padding: "em*px";
   padding: false;
@@ -65,7 +65,23 @@ body {
   font-family: arialMono;
   font-family: ria;
   font-family: r;
-  font-family: ujwu37563; }
+  font-family: uft22qmr2; }
+
+.third {
+  background-color: #4c7e80;
+  background-color: #7fb1b3;
+  background-color: #5f93a0;
+  background-color: #52aaad;
+  background-color: #6c9293;
+  background-color: #d02246;
+  background-color: rgba(220, 20, 60, 0.5);
+  background-color: 220;
+  background-color: 20;
+  background-color: 60;
+  background-color: 348deg;
+  background-color: 83.3333333333%;
+  background-color: 47.0588235294%;
+  background-color: 1; }
 
 header {
   height: 30vh; }

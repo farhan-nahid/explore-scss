@@ -35,7 +35,7 @@ body {
 // extend does not support pera meters
 
 .first {
-  color: red;
+  color: $primary-color;
   line-height: 30px;
   font-size: 30px;
   width: 30px;
@@ -43,12 +43,12 @@ body {
 }
 
 .second {
-  color: green;
+  color: $another-color;
   @extend .first;
 }
 
 .third {
-  color: blue;
+  color: $secondary-color;
   @extend .first;
 }
 
@@ -62,12 +62,12 @@ body {
 }
 
 .fourth {
-  color: green;
+  color: $another-color;
   @extend %main;
 }
 
 .fifth {
-  color: blue;
+  color: $secondary-color;
   @extend %main;
 }
 
@@ -106,6 +106,25 @@ body {
   font-family: str-slice(arial, 2, 4);
   font-family: str-slice(arial, 2, -4);
   font-family: unique-id();
+}
+
+// color functions
+
+.third {
+  background-color: darken($another-color, 10);
+  background-color: lighten($another-color, 10);
+  background-color: adjust-hue($another-color, 10);
+  background-color: saturate($another-color, 10);
+  background-color: desaturate($another-color, 10);
+  background-color: mix($another-color, $primary-color, 10);
+  background-color: transparentize($primary-color, 0.5);
+  background-color: red($primary-color);
+  background-color: green($primary-color);
+  background-color: blue($primary-color);
+  background-color: hue($primary-color);
+  background-color: saturation($primary-color);
+  background-color: lightness($primary-color);
+  background-color: alpha($primary-color);
 }
 
 @import "./header";

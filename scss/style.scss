@@ -5,6 +5,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,6 +14,61 @@ html {
 
 body {
   font-family: $main-font;
+}
+
+@mixin hover() {
+  cursor: pointer;
+  color: $secondary-color;
+  background-color: $another-color;
+}
+
+@mixin flex-item($value: center) {
+  display: flex;
+  justify-content: $value;
+  align-items: center;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+  box-shadow: $top $left $blur $color;
+}
+
+// extend does not support pera meters
+
+.first {
+  color: red;
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  font-family: $main-font;
+}
+
+.second {
+  color: green;
+  @extend .first;
+}
+
+.third {
+  color: blue;
+  @extend .first;
+}
+
+// second way
+
+%main {
+  line-height: 30px;
+  font-size: 30px;
+  width: 30px;
+  font-family: $main-font;
+}
+
+.fourth {
+  color: green;
+  @extend %main;
+}
+
+.fifth {
+  color: blue;
+  @extend %main;
 }
 
 @import "./header";

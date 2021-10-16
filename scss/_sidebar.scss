@@ -6,9 +6,7 @@ aside {
     padding: 10px;
     color: $primary-color;
     &:hover {
-      cursor: pointer;
-      color: $secondary-color;
-      background-color: $another-color;
+      @include hover();
     }
   }
 }

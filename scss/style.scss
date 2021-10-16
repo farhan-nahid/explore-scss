@@ -71,6 +71,43 @@ body {
   @extend %main;
 }
 
+//  Number Functions
+
+.fourth {
+  padding: abs(-100px);
+  padding: ceil(100.5px);
+  padding: floor(100.5px);
+  padding: round(100.5px);
+  padding: max(100.5px, 500px, 50px);
+  padding: min(100.5px, 500px, 50px);
+  padding: percentage(0.2);
+  padding: percentage(100px / 10px);
+  padding: comparable(2px, 1px);
+  padding: comparable(0.5em, 1px);
+  padding: comparable(0.5cm, 1mm);
+  padding: random();
+  padding: random(100);
+  padding: unit(100px);
+  padding: unit(100px * 2em);
+  padding: unitless(100px);
+  padding: unitless(100);
+}
+
+// String Functions
+
+.fifth {
+  font-family: quote(arial);
+  font-family: unquote("arial");
+  font-family: to-upper-case(arial);
+  font-family: to-lower-case(Arial);
+  font-family: str-length(Arial);
+  font-family: str-index(arial, "i");
+  font-family: str-insert(arial, Mono, 6);
+  font-family: str-slice(arial, 2, 4);
+  font-family: str-slice(arial, 2, -4);
+  font-family: unique-id();
+}
+
 @import "./header";
 @import "./content";
 @import "./sidebar";
